@@ -13,4 +13,4 @@ class IndexPage(TemplateView):
 class MyView(View):
 
     def get(self, request, *args, **kwargs):
-        return render(request, 'article/article.html', context={'app_name': 'article'})
+        return render(request, 'article/article.html', context={'app_name': 'hexlet_django_blog.article'})
