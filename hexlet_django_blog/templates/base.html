@@ -9,11 +9,13 @@
 <body>
 <div id="sidebar">
     {% block sidebar %}
-        <ul>
-            <li><a href="/">Главная</a></li>
-            <li><a href="/article/">Статьи</a></li>
-            <li><a href="/about/">About</a></li>
-        </ul>
+    <table>
+        <tr>
+            <td><a href="/">Главная</a></td>
+            <td><a href="/article/">Статьи</a></td>
+            <td><a href="/about/">About</a></td>
+        </tr>
+    </table>
     {% endblock %}
 </div>
 <div id="content">

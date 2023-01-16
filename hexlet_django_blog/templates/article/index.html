@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+
+{% block title %}Articles{% endblock %}
+
+{% block content %}
+    <h1>
+        Список статей | <a href="{% url 'article_create' %}">Create new</a>
+    </h1>
+    <ul>
+    {% for article in articles %}
+        <li><h4><a href="{% url 'article' article.id %}">{{ article.name }}</a></h4></li>
+        <p>{{ article.body|slice:"200" }}</p>
+    {% endfor %}
+    </ul>
+{% endblock %}
